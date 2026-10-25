@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trang chủ ôn tập Tiếng Anh lớp 8 - Global Success">
+  <title>Ôn tập Tiếng Anh 8 | Global Success</title>
+  <style>
+    :root {
+      --ink: #102a43;
+      --muted: #526b84;
+      --blue: #1677ff;
+      --blue-dark: #0d5fce;
+      --line: #d8e6f3;
+      --surface: #ffffff;
+      --background: #eef6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 32px 20px;
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 5% 5%, #d9ecff 0, transparent 28rem),
+        radial-gradient(circle at 95% 100%, #d9fff0 0, transparent 28rem),
+        var(--background);
+    }
+
+    main { max-width: 1040px; margin: 0 auto; }
+
+    .hero {
+      padding: clamp(28px, 6vw, 64px);
+      border-radius: 28px;
+      color: #fff;
+      background: linear-gradient(135deg, #0d5fce, #1677ff 58%, #38a3ff);
+      box-shadow: 0 18px 42px rgba(22, 119, 255, .22);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 12px;
+      padding: 6px 12px;
+      border: 1px solid rgba(255, 255, 255, .45);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .14);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .07em;
+    }
+
+    h1 { margin: 0; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.12; }
+    .hero p { max-width: 650px; margin: 16px 0 0; font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.6; }
+
+    .section-title { margin: 42px 0 18px; font-size: 1.35rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+
+    .card {
+      display: flex;
+      min-height: 280px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      flex-direction: column;
+      background: var(--surface);
+      box-shadow: 0 8px 24px rgba(38, 72, 106, .08);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(38, 72, 106, .14); }
+    .icon { font-size: 2.4rem; }
+    h2 { margin: 18px 0 10px; font-size: 1.28rem; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.55; }
+
+    .card a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      margin-top: auto;
+      padding: 10px 16px;
+      border-radius: 10px;
+      color: #fff;
+      background: var(--blue);
+      font-weight: 750;
+      text-decoration: none;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .card a:hover, .card a:focus-visible { background: var(--blue-dark); transform: translateY(-1px); }
+    .card a:focus-visible { outline: 3px solid #78b7ff; outline-offset: 3px; }
+    footer { padding-top: 36px; color: var(--muted); text-align: center; font-size: .93rem; }
+
+    @media (max-width: 760px) {
+      body { padding: 18px 14px; }
+      .cards { grid-template-columns: 1fr; }
+      .card { min-height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">GLOBAL SUCCESS</p>
+      <h1 id="page-title">Ôn tập Tiếng Anh 8</h1>
+      <p>Chọn nội dung để luyện phát âm, ngữ pháp hoặc làm đề kiểm tra giữa học kì I.</p>
+    </section>
+
+    <h2 class="section-title">Nội dung ôn tập</h2>
+    <section class="cards" aria-label="Danh sách bài học">
+      <article class="card">
+        <div class="icon" aria-hidden="true">🗣️</div>
+        <h2>Luyện phát âm</h2>
+        <p>Rèn luyện các dạng bài phát âm Tiếng Anh 8 với giao diện tương tác.</p>
+        <a href="PRONUNCIATION_PRACTICE_PRO_LOP8.html">Mở bài luyện phát âm →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon" aria-hidden="true">📝</div>
+        <h2>Luyện ngữ pháp</h2>
+        <p>Ôn tập các chuyên đề ngữ pháp và thực hành với bài tập có phản hồi.</p>
+        <a href="GRAMMAR_PRACTICE_PRO_LOP8_AUTO_PRONUNCIATION.html">Mở bài luyện ngữ pháp →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon" aria-hidden="true">🏆</div>
+        <h2>Đề giữa học kì I</h2>
+        <p>Làm đề ôn thi gồm 127 câu hỏi, theo dõi tiến độ và xem kết quả.</p>
+        <a href="DE%20THI%20GK1%20LOP%208.html">Mở đề kiểm tra →</a>
+      </article>
+    </section>
+
+    <footer>Tiếng Anh 8 · Global Success</footer>
+  </main>
+</body>
+</html>
